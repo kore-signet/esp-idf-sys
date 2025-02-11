@@ -593,3 +593,25 @@
 #include "onewire_bus.h"
 #include "onewire_device.h"
 #endif
+
+#ifdef ESP_IDF_COMP_ESPRESSIF__BUTTON_ENABLED
+#include "button_interface.h"
+#include "button_adc.h"
+#include "button_gpio.h"
+#include "button_matrix.h"
+#include "button_types.h"
+#include "iot_button.h"
+#endif
+
+#ifdef ESP_IDF_COMP_ESPRESSIF__LED_STRIP_ENABLED
+#include "led_strip.h"
+#include "led_strip_interface.h"
+#include "led_strip_rmt.h"
+#include "led_strip_spi.h"
+#include "led_strip_types.h"
+#endif
+
+#ifdef ESP_IDF_COMP_ESPRESSIF__BOOTLOADER_SUPORT_PLUS_ENABLED
+#include "bootloader_custom_ota.h"
+#endif
+
