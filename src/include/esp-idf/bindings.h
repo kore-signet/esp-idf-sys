@@ -619,3 +619,7 @@
 #ifdef ESP_IDF_COMP_ESPRESSIF__NTC_DRIVER_ENABLED
 #include "ntc_driver.h"
 #endif
+
+#ifdef ESP_IDF_SDMMC_ENABLED
+#include "sdmmc_cmd.h"
+#endif
